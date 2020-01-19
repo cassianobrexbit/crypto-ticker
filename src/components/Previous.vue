@@ -6,33 +6,33 @@
           <p><label>1 BTC:R$ </label> {{(previousCurrency.yesterday.BTC * 1.08).toFixed(2)}}</p><br><br>
           <p><label>1 ETH: R$ </label> {{previousCurrency.yesterday.ETH}}</p><br><br>
           <p><label>1 LTC: R$ </label> {{previousCurrency.yesterday.LTC}}</p>
-        </div>
+        </div><br>
         <div id="second">
           <h2>Data:   {{previousCurrency.twoDays.DATE}}</h2><br>
           <p><label>1 BTC: R$ </label> {{(previousCurrency.twoDays.BTC * 1.08).toFixed(2)}}</p><br><br>
           <p><label>1 ETH: R$ </label> {{previousCurrency.twoDays.ETH}}</p><br><br>
           <p><label>1 LTC: R$ </label> {{previousCurrency.twoDays.LTC}}</p>
-        </div>
+        </div><br>
         <div id="third">
           <h2>Data:   {{previousCurrency.threeDays.DATE}}</h2><br>
           <p><label>1 BTC: R$ </label> {{(previousCurrency.threeDays.BTC * 1.08).toFixed(2)}}</p><br><br>
           <p><label>1 ETH: R$ </label> {{previousCurrency.threeDays.ETH}}</p><br><br>
           <p><label>1 LTC: R$ </label> {{previousCurrency.threeDays.LTC}}</p>
         </div>
-        <br>
+        <br><br>
         <h2>Histórico de preços - Venda</h2><br>
         <div id="first">
           <h2>Data:   {{previousCurrency.yesterday.DATE}}</h2><br>
           <p><label>1 BTC: R$ </label> {{(previousCurrency.yesterday.BTC / 1.08).toFixed(2)}}</p><br><br>
           <p><label>1 ETH: R$ </label> {{previousCurrency.yesterday.ETH}}</p><br><br>
           <p><label>1 LTC: R$ </label> {{previousCurrency.yesterday.LTC}}</p>
-        </div>
+        </div><br>
         <div id="second">
           <h2>Data:   {{previousCurrency.twoDays.DATE}}</h2><br>
           <p><label>1 BTC: R$ </label> {{(previousCurrency.twoDays.BTC / 1.08).toFixed(2)}}</p><br><br>
           <p><label>1 ETH: R$ </label> {{previousCurrency.twoDays.ETH}}</p><br><br>
           <p><label>1 LTC: R$ </label> {{previousCurrency.twoDays.LTC}}</p>
-        </div>
+        </div><br>
         <div id="third">
           <h2>Data:   {{previousCurrency.threeDays.DATE}}</h2><br>
           <p><label>1 BTC: R$ </label> {{(previousCurrency.threeDays.BTC / 1.08).toFixed(2)}}</p><br><br>
@@ -58,9 +58,10 @@
      <style scoped>
     #first, #second, #third, #fourth, #fifth {
       border: 1px solid #F5CE00;
+      border-radius: 15px;
       padding: 2em 0em;
-      max-width: 90%;
-      margin: 3px auto;
+      display: inline-block;
+      width: 30%;
     }
     #first p, #second p, #third p, #fourth p, #fifth p {
       display: inline-block;
